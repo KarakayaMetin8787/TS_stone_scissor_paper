@@ -1,0 +1,137 @@
+body {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+    background-color: black;
+}
+
+header {
+    grid-column: 2/3;
+    display: grid;
+    justify-content: center;
+}
+
+input {
+    font-size: 32px;
+    width: 100px;
+    padding: 8px;
+}
+
+.goButton {
+    border-radius: 20px;
+}
+
+.goButton:active {
+    background-color: brown;
+}
+
+.goButton:focus {
+    outline: none;
+}
+
+button {
+    font-size: 32px;
+    width: 250px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+button:active {
+    background-color: brown;
+}
+
+button:focus {
+    outline: none;
+}
+
+.roundsContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.scoreContainer {
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+main {
+    grid-column: 2/3;
+    display: grid;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* man nimmt für styles keine IDs. Aber der Code ist übersichtlich genug */
+#cpuSelection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 150px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+#roundsNumber {
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.papierCPUImage {
+    position: absolute;
+    animation-name: Animation;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
+
+.schereCPUImage {
+    position: absolute;
+    animation-name: Animation;
+    animation-duration: 300ms;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+}
+
+.steinCPUImage {
+    position: absolute;
+    animation-name: Animation;
+    animation-duration: 300ms;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+}
+
+#papier {
+    transform: rotate(-50deg);
+    filter: invert(1);
+}
+
+#schere {
+    transform: rotate(-20deg);
+    filter: invert(1);
+}
+
+#stein {
+    transform: scale(-1, 1);
+    filter: invert(1);
+}
+
+@keyframes Animation {
+    0%, 33%, 66% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}

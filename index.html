@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ston Papaer Scissors</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="roundsContainer">
+            <form onsubmit="return false">
+                <label>
+                    Best of <input type="number" id="roundsNumber" required>
+                </label>
+                <input class="goButton" type="submit" value="Go!" onclick="setRounds()">
+            </form>
+            <p>Rounds left: <span id="roundsLeft"></span></p>
+        </div>
+        <div class="scoreContainer">
+            <h2 id="playerScore">0</h2>
+            <h2> : </h2>
+            <h2 id="cpuScore">0</h2>
+        </div>
+        <button class="buttonReset" onclick="resetScore()">Reset Points</button>
+    </header>
+    <main>
+        <div id="cpuSelection">
+            <img src="./assets/images/Papier.png" alt="papier" id="papier" class="papierCPUImage">
+            <img src="./assets/images/Schere.png" alt="schere" id="schere" class="schereCPUImage">
+            <img src="./assets/images/Stein.png" alt="stein" id="stein" class="steinCPUImage">
+        </div>
+        <div id="playerSelection">
+            <img src="./assets/images/Papier.png" alt="papier" id="papier" onclick=startRound(0)>
+            <img src="./assets/images/Schere.png" alt="schere" id="schere" onclick=startRound(1)>
+            <img src="./assets/images/Stein.png" alt="stein" id="stein" onclick=startRound(2)>
+        </div>
+    </main>
+    <script src="./assets/ts/main.js"></script>
+</body>
+</html>
+
