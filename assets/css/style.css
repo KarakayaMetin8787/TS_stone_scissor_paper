@@ -112,6 +112,15 @@ img {
     animation-iteration-count: infinite;
 }
 
+.cpuPointer {
+    position: absolute;
+}
+
+.playerPointer {
+    position: absolute;
+    top: 600px;
+}
+
 #papier {
     transform: rotate(-50deg);
     filter: invert(1);
