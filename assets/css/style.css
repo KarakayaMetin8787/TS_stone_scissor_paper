@@ -82,6 +82,14 @@ img {
     margin-bottom: 64px;
 }
 
+#playerScore {
+    color: coral;
+}
+
+#cpuScore {
+    color: blueviolet;
+}
+
 #roundsNumber {
     background-color: black;
     color: white;
@@ -114,11 +122,13 @@ img {
 
 .cpuPointer {
     position: absolute;
+    color: blueviolet;
 }
 
 .playerPointer {
     position: absolute;
     top: 600px;
+    color: coral;
 }
 
 #papier {
