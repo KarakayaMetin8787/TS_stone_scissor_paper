@@ -12,7 +12,7 @@ This game was meant to get used to Typescript and how it works. The CPU generate
 
 ## Demo
 
-[![App Screenshot](./src/assets/demo.gif)](https://karakayametin8787.github.io/TS_stone_scissor_paper/)
+https://karakayametin8787.github.io/TS_stone_scissor_paper/
 
 ## Authors
 
